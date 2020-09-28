@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>Image Uploading</title> 
+</head> 
+
+<body> 
+	<h1>To Upload Image on mongoDB</h1> 
+	<hr> 
+	<div> 
+        <form action="/" method="POST" enctype="multipart/form-data"> 
+            <div> 
+				<label for="name">Blog Title</label> 
+				<input type="text" id="title" placeholder="Blog Title"
+					value="" name="title" required> 
+            </div> 
+            <div> 
+				<label for="name">Blog Content</label> 
+				<input type="text" id="content" placeholder="Blog Content"
+					value="" name="content" required> 
+			</div> 
+			<div> 
+				<label for="desc">Image Description</label> 
+				<textarea id="imgDesc" name="imgDesc" value="" rows="2"
+						placeholder="Image Description" required> 
+				</textarea> 
+			</div> 
+			<div> 
+				<label for="image">Upload Image</label> 
+				<input type="file" id="image"
+					name="image" value="" required> 
+			</div> 
+			<div> 
+				<button type="submit">Submit</button> 
+			</div> 
+		</form> 
+	</div> 
+
+	<hr> 
+
+	<h1>Uplaoded Images</h1> 
+	<div> 
+		<% post.forEach(function(post) { %> 
+		<div> 
+			<div>
+				<h1><%= post.title %></h1>
+				<h2><%= post.content %></h2>
+				<img src="data:post/<%=post.img.contentType%>;base64, 
+					<%=post.img.data.toString('base64')%>"> 
+				<div> 
+					<p><%= post.imgDesc %></p> 
+				</div> 
+			</div> 
+		</div> 
+		<% }) %> 
+	</div> 
+</body> 
+
+</html> 
