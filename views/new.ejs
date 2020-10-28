@@ -1,0 +1,35 @@
+<%- include("partials/header") %>
+
+	<div class="container">
+		<div class="container-body">
+			<h1 class="header">Create new blogpost</h1> 
+			<div> 
+				<form action="/api/blog" method="POST" enctype="multipart/form-data"> 
+					<div class="form-image"> 
+						<label for="image">
+							<input type="file" id="image"
+								name="img" value="" required> Upload Image
+						</label> 
+					</div> 
+
+					<div class="form-title"> 
+						<input type="text" id="title" placeholder="Title: "
+							value="" name="title" required> 
+					</div> 
+					<div class="form-content"> 
+						<textarea type="text" id="content" placeholder="Blog Content"
+							value="" name="content" required></textarea>
+					</div> 
+					
+					<div> 
+						<button class="btn-submit" type="submit">Submit</button> 
+					</div> 
+				</form> 
+			</div> 
+		</div>
+	</div>
+	
+	
+</body> 
+
+</html> 

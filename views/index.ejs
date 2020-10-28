@@ -1,0 +1,37 @@
+<%- include("partials/header") %>
+
+
+    <div class="container">
+        <div class="container-body">
+            <h1 class="header">Blog List</h1>
+            
+                <% posts.forEach((post) => { %>
+                <div class="blog-item">
+                    <div class="blog-container-main">
+                        <h2 class="blog-title"><%= post.title %></h2>
+                        
+                        <div class="button">
+                            <form action="/api/blog/<%=post._id %>/edit">
+                                <button class="btn-edit">Edit</button>
+                            </form>
+                            <form action="/api/blog/<%= post._id%>/?_method=DELETE" method="POST">
+                                <button class="btn-delete">Delete</button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-container-date">
+                        <h5 class="blog-date"><%= post.created %></h5>
+                    </div>
+                    
+                </div>
+                <% }) %>
+                
+            
+        </div>
+        
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,203 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    width: 50%;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.container-body{
+    margin-top: 4rem;
+}
+
+.header {
+    margin-bottom: 3rem;
+}
+
+.blog-item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.1px solid rgb(226, 226, 226);
+}
+.blog-container-main {
+    display: flex;
+    width: 100%;
+}
+.blog-title {
+    font-weight: 100;
+    max-width: 80%;
+    min-width: 80%;
+}
+.blog-container-date{
+    display: block;
+    font-size: 0.8rem;
+    color: rgba(136, 136, 136, 0.849)
+}
+.blog-date {
+    display:block;
+}
+.button {
+    display: flex;
+    min-width: 20%;
+    max-width: 20%;
+    /* margin-left: 80%; */
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 1rem;
+    padding: 0.5rem;
+    background-color: transparent;
+    border: none;
+}
+
+.btn-edit {
+    color: rgb(39, 124, 250);
+}
+
+
+.btn-delete {
+    color: rgb(235, 35, 79);
+}
+
+.btn-create {
+    margin-top: 3rem;
+    margin-left: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+    text-align: center;
+    background-color: transparent;
+    border: 0.1px solid rgb(235, 35, 79);
+    color: rgb(235, 35, 79);
+    min-width: 15%;
+}
+
+.form-title input {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.form-content textarea {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 30rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.form-image {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0.5rem;
+    background-color: transparent;
+    border: 0.1px solid rgb(235, 35, 79);
+    color: rgb(235, 35, 79);
+    width: 20%;
+    margin-bottom: 1rem;
+}
+
+.form-image input[type="file"] {
+    display:none;
+}
+
+.btn-submit {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+    margin-left: 0;
+    text-align: center;
+    background-color: transparent;
+    border: 0.1px solid rgb(235, 35, 79);
+    color: rgb(235, 35, 79);
+    width: 20%;
+}
+
+.navbar {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.navbar h5{
+    width: 10%;
+    margin-right: 1rem;
+    font-weight: 100;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar a:hover{
+    color: rgb(235, 35, 79);
+}
+
+.navbar #nav-signout {
+    margin-left: 70%;
+    margin-right: 0;
+}
+
+.container-login {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: #071527;
+    color: white;
+}
+
+.container-login-center {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-content: center;
+}
+
+.login-header {
+    text-align: center;
+}
+
+.login-form form{
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+}
+
+.form-login input {
+    font-family: 'Roboto', sans-serif;
+    width: 20rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.form-login button {
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+    text-align: center;
+    background-color: white;
+    border: 0.1px solid rgb(235, 35, 79);
+    color: rgb(235, 35, 79);
+    width: 50%;
+}
