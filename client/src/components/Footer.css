@@ -1,0 +1,13 @@
+#footer {
+    position: relative;
+    padding: 10px;
+    margin-top: 5rem;
+    height: 50px;
+    text-align: center;
+}
+
+#footer h3 {
+    margin: 0 auto;
+    font-size: 0.7rem;
+    font-weight: 300;
+}

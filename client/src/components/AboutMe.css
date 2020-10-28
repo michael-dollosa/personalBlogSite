@@ -1,0 +1,116 @@
+.container-aboutme {
+    display: flex;
+    margin: 0 auto;
+    width: 60%;
+    background-color: #f7f7f7;
+    margin: 4% auto;
+    padding: 4% 13%;
+}
+
+.aboutme-img {
+    background-image: url('../assets/aboutme.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 17rem;
+    margin-right: 13%;
+}
+
+.aboutme-content {
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 8%; */
+    min-width: 21rem;
+    max-width: 21rem;
+    padding: 1%;
+    /* background-color: tomato; */
+}
+
+.aboutme-title {
+    font-size: 2rem;
+    border-left: 6px solid #0A223E;
+    padding-left: 5%;
+    margin-bottom: 10%;
+    color: #CECECE;
+
+}
+
+.aboutme-details {
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
+    color: #464646;
+}
+
+.colored {
+    color: #e4225c;
+}
+
+/*MEDIA SCREEN FOR ABOUTME*/
+@media screen and (max-width: 1450px) {
+    .container-aboutme {
+        width: 80%;
+    }
+
+    .aboutme-img {
+        background-image: url('../assets/aboutme.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 17rem;
+        margin-right: 13%;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .container-aboutme {
+        width: 80%;
+    }
+
+    .aboutme-content {
+        display: flex;
+        flex-direction: column;
+        min-width: 15rem;
+        max-width: 15rem;
+        padding: 1%;
+    }
+    
+}
+
+@media screen and (max-width: 950px) {
+
+    .container-aboutme {
+        background-image: url('../assets/aboutme-opacity.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    .aboutme-img {
+        display: none;
+    }
+
+    .aboutme-content {
+        display: flex;
+        flex-direction: column;
+        min-width: 100%;
+        padding: 1%;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .aboutme-title {
+        font-size: 1.5rem;
+    
+    }
+    
+    .aboutme-details {
+        font-size: 0.8rem;
+        font-weight: 100;
+        letter-spacing: 0.1rem;
+        line-height: 1rem;
+
+    }
+
+}
+/*MEDIA SCREEN FOR ABOUTME*/

@@ -1,0 +1,232 @@
+/*RESET PARAMS*/
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+button:focus {
+    outline: 0;
+}
+/*END OF RESET*/
+
+/*GENERAL CSS*/
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'PT-Sans', sans-serif;
+    font-size: 10px;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+}
+
+/*END GENERAL CSS*/
+
+/*HEADER STYLE*/
+.header {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    
+    /* background: url('../assets/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.header-layer {
+    background-color: rgba(14, 14, 14, 0.418);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.header-box {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle; 
+    width: 100%;
+    max-width: 55rem;
+    min-width: 55rem;
+}
+
+.logo {
+    height: 17rem;
+    width: 17rem;
+    margin: 0 auto;
+    animation: moveFromTop;
+    animation-duration: 1s;
+}
+
+.heading-primary {
+    padding-top: 3vh;
+    padding-bottom: 8vh;
+    margin: 0 auto;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    animation: moveFromBot;
+    animation-duration: 1s;
+}
+
+.heading-primary-main {
+    display: block;
+    margin: 0 auto;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.heading-primary-sub {
+    display: block;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-weight: 50;
+    line-height: 1.5rem;
+    text-align: center;
+    color:  rgb(219, 219, 219);
+    padding-bottom: 2rem;
+    
+}
+
+.social-media {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    align-content: center;
+}
+.social-media i{
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* .blog-btn{
+    display: inline-block;
+    padding: 1em 3em;
+    border:0.01em solid #1d1b1c;
+    margin:2rem 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-family:'Roboto',sans-serif;
+    font-weight:400;
+    color:#1d1b1c;
+    text-align:center;
+    transition: all 0.15s;
+    background-color: transparent;
+}
+
+.blog-btn:hover{
+    color:#e425b4;
+    border-color:#e425b4;
+}
+.blog-btn:active{
+    color:#f0e9ee;
+    border-color:#e425b4;
+    background-color: rgb(219, 50, 219);
+    
+} */
+
+/*END HEADER STYLE*/
+
+/*ANIMATION*/
+@keyframes moveFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveFromBot {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+/*END ANIMATION*/
+
+
+/*MEDIA SCREEN FOR HEADER*/
+
+@media screen and (max-width: 850px) {
+
+    .heading{
+        flex-direction: column;
+        max-width: 29rem;
+        min-width: 29rem;
+    }
+
+    .logo {
+        height: 50%;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .heading-primary {
+        max-width: 29rem;
+        min-width: 29rem;
+        margin: 0 auto;
+    }
+   
+    .blog-btn{
+        display: block;
+        padding: 1em 3em;
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (max-width: 575px) {
+
+    .heading{
+        flex-direction: column;
+        max-width: 23.3rem;
+        min-width: 23.3rem;
+    }
+
+    .logo {
+        height: 50%;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .heading-primary {
+        max-width: 20rem;
+        min-width: 20rem;
+        margin: 0 auto;
+    }
+   
+    .blog-btn{
+        display: block;
+        padding: 1em 3em;
+        margin: 0 auto;
+        
+    }
+
+}
+/*MEDIA SCREEN FOR HEADER*/
+
