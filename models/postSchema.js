@@ -11,7 +11,15 @@ const postSchema = new mongoose.Schema({
         name: String,
         path: String
     },
-    imgDesc: String,
+    created: {type: Date, default: Date.now}
 })
 
+postSchema.pre('remove', async function(next){
+    try{
+        next()
+    } catch(err){
+        next(err)
+    }
+    
+})
 module.exports = mongoose.model('Post', postSchema)
