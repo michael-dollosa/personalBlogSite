@@ -23,7 +23,7 @@ const BlogPage = () => {
         
         <div className="blog-container">
             {/* <img src={`http://localhost:5000/uploads/${contents.img.name}`} /> */}
-            <div className="img-container" style={{backgroundImage: "url(http://localhost:5000/uploads/" + contents.img.name }}></div>
+            <div className="img-container" style={{backgroundImage: "url(http://127.0.0.1:5000/uploads/" + contents.img.name }}></div>
             <div className="content-title">{contents.title}</div>
             <div className="content-date">{contents.created}</div>
             
