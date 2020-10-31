@@ -3,18 +3,18 @@ const router = express.Router()
 const passport = require('passport')
 const Admin = require('../models/adminSchema')
 
-//ADMIN LOGIN
-//hardcoded admin registration
-// console.log('Registering hardcoded admin account')
-// Admin.register(new Admin({username: 'admin'}), 'gagoka1434', (err, user) => {
-//     if(err){
-//         console.log(err)
-//     }
+// ADMIN LOGIN
+// hardcoded admin registration
+console.log('Registering hardcoded admin account')
+Admin.register(new Admin({username: 'admin'}), 'gagoka1434', (err, user) => {
+    if(err){
+        console.log(err)
+    }
 
-//     passport.authenticate('local')(req,res, ()=> {
-//         res.redirect('/api/blog')
-//     })
-// })
+    passport.authenticate('local')(req,res, ()=> {
+        res.redirect('/api/blog')
+    })
+})
 
 //LOGIN ROUTE
 router.get('/api/login', (req,res)=> {
