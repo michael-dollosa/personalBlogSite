@@ -42,7 +42,7 @@ button:focus {
 }
 
 .blog-card:hover {
-    /* border-left: 1px solid #0A223E; */
+    border-left: 4px solid #0A223E;
     height: 100%;
     transition: 0.3s;
 }
