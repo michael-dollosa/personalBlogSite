@@ -2,7 +2,7 @@
     display: flex;
     margin: 0 auto;
     width: 60%;
-    background-color: #f7f7f7;
+    /* background-color: #f7f7f7; */
     margin: 4% auto;
     padding: 4% 13%;
 }
@@ -28,9 +28,9 @@
 .aboutme-title {
     font-size: 2rem;
     border-left: 6px solid #0A223E;
-    padding-left: 5%;
+    padding: 5%;
     margin-bottom: 10%;
-    color: #CECECE;
+    color: #363636;
 
 }
 
@@ -44,6 +44,7 @@
 
 .colored {
     color: #e4225c;
+    font-weight: 700;
 }
 
 /*MEDIA SCREEN FOR ABOUTME*/

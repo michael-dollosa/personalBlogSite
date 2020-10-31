@@ -1,3 +1,11 @@
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
 .navbar-dark {
     position: absolute;
     top: 0;
@@ -21,9 +29,10 @@
     width: 100%;
     z-index: 2;
     text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: 300;
+    font-size: 0.7rem;
+    font-weight: 500;
     color: black;
+    border-top: 2px solid #e21a56;
 }
 
 .navbar-white a {
@@ -33,27 +42,20 @@
 
 .navbar-container {
     margin: 0 auto;
-    opacity: 0;
     height: 5rem;
     width: 60%;
     padding-top: 2rem;
-    animation: moveFromTop;
-    animation-delay: 0.5s;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
 }
 
 .navbar-logo{
     float: left;
-    transition: 0.25s;
 }
+
 .navbar-links {
-    width: 10rem;
+    width: 7rem;
     display: flex;
     justify-content: space-between;
-    float: right;
-    transition: 0.25s;
-    /* margin-right: 5%; */
+    margin: 0 auto;
 }
 
 .navbar-links a:hover {
@@ -65,32 +67,6 @@
     color: #e4225c;
 }
 
-/*ANIMATION*/
-@keyframes moveFromTop {
-    0% {
-        opacity: 0;
-        transform: translateY(-100px);
-    }
-
-    100%{
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-
-@keyframes moveFromBot {
-    0% {
-        opacity: 0;
-        transform: translateY(100px);
-    }
-
-    100%{
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-
-/*END ANIMATION*/
 
 @media screen and (max-width: 600px) {
     .navbar-logo{

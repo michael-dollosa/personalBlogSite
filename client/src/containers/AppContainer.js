@@ -21,6 +21,7 @@ const AppContainer = () => {
                 <Navbar navbar={navbar}/>
                 <Route exact path="/" render = {() => <HomeContainer changeNavbar={changeNavbar(false)} />} />
                 <Route path='/blog/*' render = {() => <BlogContainer changeNavbar={changeNavbar(false)} /> } />
+                {/* <Route exact path="/blog" render = {() => <BlogList changeNavbar={changeNavbar(false)} />} /> */}
                 <Route exact path="/blog" render = {() => <BlogList changeNavbar={changeNavbar(false)} />} />
             </Router>
             </section>

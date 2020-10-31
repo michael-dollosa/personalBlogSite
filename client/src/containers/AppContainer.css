@@ -1,3 +1,29 @@
+/*RESET PARAMS*/
+html {
+    overflow-y: scroll; 
+}
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+button:focus {
+    outline: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'PT-Sans', sans-serif;
+    font-size: 10px;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+}
+
 .page-container {
     display: flex;
     flex-direction: column;

@@ -34,6 +34,24 @@
 
 }
 
+
+/*blog styles*/
+
+.content-main p{ 
+    margin-bottom: 2rem;
+}
+
+.content-main .code {
+    font-family: Roboto Condensed;
+    font-size: 1rem;
+    margin: 0 auto;
+    background-color: #F6F5F1;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    width: 90%;
+}
+
+/********/
 /*MEDIA SCREEN FOR BLOGPAGE */
 @media screen and (max-width: 1000px) {
     .blog-container {

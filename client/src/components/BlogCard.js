@@ -33,8 +33,9 @@ const BlogCard = (props) => {
                         <span className="blog-date">{getDate(props.post.created)}</span>
                         <div className="blog-title">{props.post.title}</div>
                         <div className="blog-content-preview">
-                            <p>
-                                {props.post.content.substring(0,300)}
+                            <p dangerouslySetInnerHTML={{__html: props.post.content.substring(0,300)}}>
+                                
+                                {/* {props.post.content.substring(0,300)} */}
                             </p>
                         </div>
                         <Link to={`/blog/${props.post._id}`} className="blog-readmore">

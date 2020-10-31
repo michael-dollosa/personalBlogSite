@@ -11,10 +11,12 @@ const AboutMe = () => {
             </div>
             <div className="aboutme-content">
                 <div className="aboutme-title">
-                    <span className="colored">Lorem, ipsum</span> dolor sit amet consectetur <span className="colored">adipisicing elit</span>
+                    About <span className="colored">Me</span> 
                 </div>
                 <div className="aboutme-details">
-                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. 
+                    <p>
+                        Results oriented, and technology driven professional that has a passion for learning with a strong foundation and exceptional working experience in the Information Technology and Services industry. Currently, I am focused on studying web development.
+                    </p>
                 </div>
             </div>
             
