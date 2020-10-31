@@ -22,7 +22,7 @@ const BlogPage = () => {
     return (
         
         <div className="blog-container">
-            <div className="img-container" style={{backgroundImage: "url(139.180.198.104:5000/uploads/" + contents.img.name }}></div>
+            <div className="img-container" style={{backgroundImage: "url(http://139.180.198.104:5000/uploads/" + contents.img.name }}></div>
             <div className="content-title">{contents.title}</div>
             <div className="content-date">{contents.created}</div>
             <div className="content-main" dangerouslySetInnerHTML={{__html: contents.content}}></div>
