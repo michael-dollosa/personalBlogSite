@@ -103,7 +103,10 @@ router.delete('/api/blog/:id', isLoggedIn, (req,res) => {
     })
 })
 
-
+//SSL
+router.get('/.well-known/pki-validation/C7E1B56D6764A35CF89817BC41159377.txt', (req,res) => {
+    res.send('935E7AB8207AF8DC23EF3F691881A0134D00275768BE9A16FCDAC881887647A9 comodoca.com 5fb945bd5e532')
+})
 //isLoggedIn middleware
 function isLoggedIn(req,res,next){
     if(req.isAuthenticated()){

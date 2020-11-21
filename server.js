@@ -59,10 +59,17 @@ mogoose
     .then(()=>{console.log('Connected to MongoDB')})
     .catch((err)=>{console.log(err)})
 
+
+    app.get('/wellwell', (req,res) => {
+        res.send('sample sample')
+    })
+    
 //use Routes
 app.use(adminRoute)
 app.use(blogRoute)
 app.use(apiRoute)
+
+
 
 //INIT SERVER
 app.listen(PORT, ()=> {
