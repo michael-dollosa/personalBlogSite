@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar'
 import BlogContainer from '../components/BlogContainer'
 import Footer from '../components/Footer'
 import './AppContainer.css'
+import Maintenance from '../components/Maintenance'
 
 const AppContainer = () => {
 
@@ -16,15 +17,16 @@ const AppContainer = () => {
 
     return(
         <main className="page-container">
-            <section className="main-container"> 
-            <Router>
-                <Navbar navbar={navbar}/>
-                <Route exact path="/" render = {() => <HomeContainer changeNavbar={changeNavbar(false)} />} />
-                <Route path='/blog/*' render = {() => <BlogContainer changeNavbar={changeNavbar(false)} /> } />
+            {/* <section className="main-container">  */}
+            {/* <Router> */}
+                {/* <Navbar navbar={navbar}/> */}
+                {/* <Route exact path="/" render = {() => <HomeContainer changeNavbar={changeNavbar(false)} />} /> */}
+                {/* <Route path='/blog/*' render = {() => <BlogContainer changeNavbar={changeNavbar(false)} /> } /> */}
                 {/* <Route exact path="/blog" render = {() => <BlogList changeNavbar={changeNavbar(false)} />} /> */}
-                <Route exact path="/blog" render = {() => <BlogList changeNavbar={changeNavbar(false)} />} />
-            </Router>
-            </section>
+                {/* <Route exact path="/blog" render = {() => <BlogList changeNavbar={changeNavbar(false)} />} /> */}
+            {/* </Router> */}
+            {/* </section> */}
+            <Maintenance />ß
             <footer>
                 <Footer />
             </footer>

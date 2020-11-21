@@ -4,7 +4,7 @@ import './Footer.css'
 const Footer = () => {
     return (
         <main id="footer">
-           <h3>© Michael Dollosa. Consultant, Developer from Manila, Philippines</h3> 
+           <h3>© Michael Dollosa. This site is still in progress</h3> 
         </main>
     )
     
